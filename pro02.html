@@ -1,0 +1,47 @@
+
+<html>
+<head><center><i><h3>Simple Calculator</h3></i></center>
+<script language="javascript">
+function add(form)
+{
+form.r1.value=parseInt(form.n1.value)+parseInt(form.n2.value);
+}
+function sub(form)
+{
+form.r2.value=parseInt(form.n1.value)-parseInt(form.n2.value);
+}
+function mul(form)
+{
+form.r3.value=parseInt(form.n1.value)*parseInt(form.n2.value);
+}
+function div(form)
+{
+form.r4.value=parseInt(form.n1.value)/parseInt(form.n2.value);
+}
+</script>
+<body bgcolor="yellow"><form><br><br><h2>First Number:</h2>
+<input type="text"name="n1"value=" ">
+<h2>Second Number:</h2>
+<input type="text"name="n2"value=" ">
+<br><br><br><h2>Results:</h2><br>
+
+<input type="text"name="r1"value=" ">
+<input type="button"onclick="add(this.form)";
+value="Addition"name="addition"><br>
+
+<input type="text"name="r2"value=" ">
+<input type="button"onclick="sub(this.form)";
+value="Subtraction"name="subtraction"><br>
+
+<input type="text"name="r3"value=" ">
+<input type="button"onclick="mul(this.form)";
+value="Multiplication"name="multiplication"><br>
+
+<input type="text"name="r4"value=" ">
+<input type="button"onclick="div(this.form)";
+value="Division"name="division"><br><br>
+
+<input type="reset"value="Reset">
+</form>
+</body>
+</html>
